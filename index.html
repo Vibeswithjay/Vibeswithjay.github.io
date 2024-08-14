@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <!-- Navigation Bar -->
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">Chukwueloke Iwegbue</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Smooth Scroll JS -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+    <section id="about" class="about-section">
+        <h1 class="about-heading">CHUKWUELOKE IWEGBUE</h1>
+        <div class="image-container">
+            <img src="zzzz.jpg" alt="Profile Image" class="profile-image">
+        </div>
+        <div class="text-content">
+            <p>
+                Welcome to my portfolio! I am a passionate and dedicated individual with a deep interest in web development and design. With a solid background in creating visually appealing and user-friendly websites, I strive to bring innovative ideas to life and solve real-world problems through code.
+            </p>
+            <p>
+                My journey in the tech industry has been both challenging and rewarding. I continuously seek opportunities to learn and grow, whether through formal education, personal projects, or collaborating with others. I believe in the power of technology to create meaningful experiences and look forward to contributing my skills and knowledge to exciting new ventures.
+            </p>
+        </div>
+           <!-- Projects Section -->
+    <section id="projects" class="projects-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row">
+                <!-- Project Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="newplot.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">ANALYSIS AND VISUALIZATION FROM THE UNIVERSITY DATASET</h5>
+                            <p class="card-text">This project focuses on the detailed analysis and visualization of a university dataset to uncover insights related to student performance, demographics, and academic resources. The objectives include data cleaning and preparation to ensure the dataset is accurate and consistent, exploratory data analysis to identify key trends and correlations, and the creation of interactive visualizations to represent complex data in an accessible manner. Tools employed in this project include Python libraries such as Pandas and NumPy for data processing, and Matplotlib or Seaborn for generating insightful visualizations. The impact of this project is significant for educational stakeholders, as it provides actionable insights into factors influencing student success and institutional effectiveness, supporting data-driven decision-making to enhance educational outcomes and resource management.</p>
+                            <a href="https://github.com/Vibeswithjay/Analysis-of-Universities-Quota/blob/main/Analysis%20of%20University%20Q.ipynb" class="btn btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="newplot (1).png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">ANALYSIS AND VISUALIZATION OF JOBS DATA SET FOR DATA ANALYSIS JOBS</h5>
+                            <p class="card-text">This project involves the analysis and visualization of a dataset containing job postings for data analysis roles, aiming to uncover trends, skill demands, geographical distribution, and salary patterns. Key objectives include data cleaning and preparation to ensure dataset accuracy, exploratory data analysis to compute key metrics and identify trends, and in-depth skills analysis to determine the most sought-after qualifications. Additionally, the project features geographical mapping to highlight regional job demand and salary analysis to compare compensation trends across different roles and locations. Tools used include Python libraries such as Pandas and NumPy for data manipulation, Matplotlib, Seaborn, and Plotly for visualization, and Geopandas for geographic analysis. The impact of this project lies in providing job seekers with insights to better align their skills with market demands, and offering recruiters valuable data to refine their hiring strategies and understand competitive trends. By integrating these analyses, the project supports strategic decision-making and enhances understanding of the data analysis job market.</p>
+                            <a href="https://github.com/Vibeswithjay/Used-Car-Sales-Analysis/blob/main/Used%20Cars.ipynb" class="btn btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="WEBSC.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">MULTI PAGE WEB SCRAPPER</h5>
+                            <p class="card-text">This project involves developing a robust multipage web scraper designed to systematically extract and analyze data on the Most Valuable Player (MVP) for each year from various annual award listings. The objectives include constructing a scraper to navigate through multiple web pages, extract MVP names, award years, and relevant statistics, and consolidate this data into a structured format for comprehensive analysis. Tools used include Python libraries such as BeautifulSoup and Scrapy for web scraping, and Pandas for data organization. The impact of this project lies in providing a thorough historical record of MVP selections, enabling deeper insights into player achievements over time and supporting fans, analysts, and researchers in understanding trends and patterns in MVP awards.</p>
+                            <a href="https://github.com/Vibeswithjay/MULTIPAGE-WEBSCRAPPER/tree/main" class="btn btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Skills Section -->
+     <section id="skills" class="skills-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row">
+                <!-- Skill Card 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card text-center">
+                        <img src="PLOGO.jpeg" class="card-img-top mx-auto" alt="Python" style="width: 80px; height: 80px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                            <p class="card-text">With intermediate Python skills, I excel in data manipulation using libraries like Pandas and NumPy, enabling efficient cleaning, analysis, and transformation of complex datasets. My experience extends to web scraping with BeautifulSoup and Scrapy, allowing me to gather and process data from multiple web pages seamlessly. I am adept at creating clear and impactful visualizations using Matplotlib, Seaborn, and Plotly, and I regularly automate tasks with Python scripts to enhance efficiency. Additionally, I have a solid understanding of algorithms and data structures, and I can integrate and interact with APIs to pull in external data. These skills collectively enable me to tackle diverse programming challenges and deliver data-driven insights effectively.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card text-center">
+                        <img src="DLOGO.jpg" class="card-img-top mx-auto" alt="Data Visualization" style="width: 80px; height: 80px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Visualization</h5>
+                            <p class="card-text">I specialize in data visualization, leveraging tools like Matplotlib, Seaborn, and Plotly to transform complex datasets into insightful and visually compelling charts and graphs. My expertise includes creating a wide range of visualizations, from basic line and bar charts to advanced interactive dashboards, which help to uncover trends, patterns, and anomalies in data. By applying best practices in design and visualization principles, I ensure that my visual representations not only convey information clearly but also engage and inform stakeholders, facilitating data-driven decision-making.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card text-center">
+                        <img src="sql-database-generic.jpg" class="card-img-top mx-auto" alt="SQL" style="width: 80px; height: 80px;">
+                        <div class="card-body">
+                            <h5 class="card-title">SQL</h5>
+                            <p class="card-text">I possess strong SQL skills, allowing me to efficiently query, manipulate, and analyze relational databases. I am adept at writing complex SQL queries to extract and aggregate data, perform joins, and filter results based on specific criteria. My experience includes creating and managing database schemas, optimizing query performance, and using SQL for data validation and reporting. By leveraging my SQL expertise, I can translate business requirements into actionable insights, ensuring data integrity and supporting data-driven decision-making across various projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card text-center">
+                        <img src="datastorytelling.jpeg" class="card-img-top mx-auto" alt="Data Storytelling" style="width: 80px; height: 80px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Storytelling</h5>
+                            <p class="card-text">I excel in data storytelling, seamlessly combining data analysis with compelling narratives to transform complex information into engaging and actionable insights. By using visualization tools and techniques, I create clear, informative charts and graphs that not only highlight key findings but also convey a coherent story that resonates with the audience. My approach involves structuring data presentations to emphasize trends, patterns, and anomalies, ensuring that insights are both accessible and impactful. Through effective storytelling, I help stakeholders make informed decisions and understand the broader implications of the data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+       <!-- Contact Me Section -->
+       <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="text-center text-white mb-4">Contact Me</h2>
+            <div class="row mb-4">
+                <!-- Contact Information -->
+                <div class="col-md-6 text-center mb-3 mb-md-0">
+                    <i class="fa fa-envelope fa-2x text-white"></i>
+                    <p><a href="mailto:iwegbueloke@gmail.com">iwegbueloke@gmail.com</a></p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <i class="fa fa-phone fa-2x text-white"></i>
+                    <p><a href="tel:+2348056154435">+2348056154435</a></p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Vibeswithjay"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.twitter.com/Vibeswithjay_"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/vibess.sg?igsh=MXU3aDVmZzcxOW5oMA=="><i class="fa-brands fa-instagram  "></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+    </section>
+    
+</body>
+</html>
