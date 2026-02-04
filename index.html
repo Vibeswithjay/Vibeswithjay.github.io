@@ -1,189 +1,470 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Document</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chukwueloke Iwegbue | Data Scientist Portfolio</title>
+  <meta name="description" content="Portfolio of Chukwueloke Iwegbue — data science projects, skills, and contact." />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-       <!-- Navigation Bar -->
-       <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <a class="navbar-brand" href="#">Chukwueloke Iwegbue</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+
+<body class="theme-dark">
+  <!-- Scroll progress -->
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+  <!-- Background decor -->
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span class="brand-name">Chukwueloke Iwegbue</span>
+          <span class="brand-role">Data Scientist</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+
+          <div class="nav-icons">
+            <a class="icon" href="https://github.com/Vibeswithjay" target="_blank" rel="noopener" aria-label="GitHub">
+              <!-- GitHub icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A12 12 0 0 0 8.2 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.9 1.3 3.6 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.4-5.5-6.1 0-1.4.5-2.5 1.2-3.4-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.2a11.7 11.7 0 0 1 6.2 0C17.5 4 18.5 4.3 18.5 4.3c.6 1.7.2 3 .1 3.3.8.9 1.2 2 1.2 3.4 0 4.8-2.8 5.8-5.5 6.1.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+            <a class="icon" href="https://www.linkedin.com/in/chukwueloke-iwegbue-437346284/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-2.9-1.8-2.9-1.8 0-2.1 1.4-2.1 2.8v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.3-1.9 3.6 0 4.3 2.4 4.3 5.4v6.3ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2Zm-1.8 13h3.6V9H3.5v11.4Z"/></svg>
+            </a>
+            <a class="icon" href="Chukwueloke_Iwegbue_CV.pdf" download aria-label="Download CV">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v8.6l2.3-2.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.4L11 12.6V4a1 1 0 0 1 1-1Zm-7 15a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg>
+            </a>
+
+            <button class="icon theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+              <svg id="themeIcon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 14.5A8.5 8.5 0 0 1 9.5 3a.8.8 0 0 0-.9 1A7 7 0 1 0 20 15.4a.8.8 0 0 0 1-0.9Z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy" data-reveal>
+            <h1>Turning messy data into clear decisions.</h1>
+            <p class="hero-lede">
+              I build end-to-end analytics and machine learning solutions from data cleaning and SQL to modelling,
+              visualization, and storytelling.
+            </p>
+
+            <div class="chip-row" aria-label="Core skills">
+              <span class="chip">Python</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Machine Learning</span>
+              <span class="chip">Dashboards</span>
+              <span class="chip">Data Storytelling</span>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="Chukwueloke_Iwegbue_CV.pdf" download>Download CV</a>
+              <a class="btn btn-soft" href="https://www.linkedin.com/in/chukwueloke-iwegbue-437346284/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+
+            <div class="hero-metrics" data-reveal>
+              <div class="metric">
+                <div class="metric-k">Focus</div>
+                <div class="metric-v">Applied ML + Analytics</div>
+              </div>
+              <div class="metric">
+                <div class="metric-k">Tools</div>
+                <div class="metric-v">Pandas • scikit-learn • SQL</div>
+              </div>
+              <div class="metric">
+                <div class="metric-k">Strength</div>
+                <div class="metric-v">Clear, decision-ready outputs</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media" data-reveal>
+            <div class="media-card">
+              <img src="zzzz.jpg" alt="Portfolio hero image" />
+              <div class="media-overlay" aria-hidden="true"></div>
+            </div>
+
+            <div class="mini-cards">
+              <div class="mini" data-reveal>
+                <div class="mini-icon">🧠</div>
+                <div class="mini-text">
+                  <div class="mini-title">ML Projects</div>
+                  <div class="mini-sub">Classification • Prediction • Evaluation</div>
+                </div>
+              </div>
+              <div class="mini" data-reveal>
+                <div class="mini-icon">📊</div>
+                <div class="mini-text">
+                  <div class="mini-title">Analytics</div>
+                  <div class="mini-sub">EDA • Reporting • Dashboards</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <h2>About</h2>
+          <p>
+            I’m a data scientist focused on building practical solutions that turn raw data into insights and action.
+            I enjoy delivering clean pipelines, strong evaluation, and visuals that communicate clearly.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="card" data-reveal>
+            <h3>What I do</h3>
+            <ul class="list">
+              <li>Data cleaning, feature engineering, and modelling</li>
+              <li>SQL analysis and relational data work</li>
+              <li>Dashboards and storytelling with clear visuals</li>
             </ul>
-        </div>
-    </nav>
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Smooth Scroll JS -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
-</html>
-    <section id="about" class="about-section">
-        <h1 class="about-heading">CHUKWUELOKE IWEGBUE</h1>
-        <div class="image-container">
-            <img src="zzzz.jpg" alt="Profile Image" class="profile-image">
-        </div>
-        <div class="text-content">
-            <p>
-                Welcome to my portfolio! I am a passionate and dedicated individual with a deep interest in web development and design. With a solid background in creating visually appealing and user-friendly websites, I strive to bring innovative ideas to life and solve real-world problems through code.
-            </p>
-            <p>
-                My journey in the tech industry has been both challenging and rewarding. I continuously seek opportunities to learn and grow, whether through formal education, personal projects, or collaborating with others. I believe in the power of technology to create meaningful experiences and look forward to contributing my skills and knowledge to exciting new ventures.
-            </p>
-        </div>
-           <!-- Projects Section -->
-    <section id="projects" class="projects-section py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Projects</h2>
-            <div class="row">
-                <!-- Project Card 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="newplot.png" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">ANALYSIS AND VISUALIZATION FROM THE UNIVERSITY DATASET</h5>
-                            <p class="card-text">This project focuses on the detailed analysis and visualization of a university dataset to uncover insights related to student performance, demographics, and academic resources. The objectives include data cleaning and preparation to ensure the dataset is accurate and consistent, exploratory data analysis to identify key trends and correlations, and the creation of interactive visualizations to represent complex data in an accessible manner. Tools employed in this project include Python libraries such as Pandas and NumPy for data processing, and Matplotlib or Seaborn for generating insightful visualizations. The impact of this project is significant for educational stakeholders, as it provides actionable insights into factors influencing student success and institutional effectiveness, supporting data-driven decision-making to enhance educational outcomes and resource management.</p>
-                            <a href="https://github.com/Vibeswithjay/Analysis-of-Universities-Quota/blob/main/Analysis%20of%20University%20Q.ipynb" class="btn btn-secondary">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Card 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="newplot (1).png" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">ANALYSIS AND VISUALIZATION OF JOBS DATA SET FOR DATA ANALYSIS JOBS</h5>
-                            <p class="card-text">This project involves the analysis and visualization of a dataset containing job postings for data analysis roles, aiming to uncover trends, skill demands, geographical distribution, and salary patterns. Key objectives include data cleaning and preparation to ensure dataset accuracy, exploratory data analysis to compute key metrics and identify trends, and in-depth skills analysis to determine the most sought-after qualifications. Additionally, the project features geographical mapping to highlight regional job demand and salary analysis to compare compensation trends across different roles and locations. Tools used include Python libraries such as Pandas and NumPy for data manipulation, Matplotlib, Seaborn, and Plotly for visualization, and Geopandas for geographic analysis. The impact of this project lies in providing job seekers with insights to better align their skills with market demands, and offering recruiters valuable data to refine their hiring strategies and understand competitive trends. By integrating these analyses, the project supports strategic decision-making and enhances understanding of the data analysis job market.</p>
-                            <a href="https://github.com/Vibeswithjay/Used-Car-Sales-Analysis/blob/main/Used%20Cars.ipynb" class="btn btn-secondary">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Card 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="WEBSC.png" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">MULTI PAGE WEB SCRAPPER</h5>
-                            <p class="card-text">This project involves developing a robust multipage web scraper designed to systematically extract and analyze data on the Most Valuable Player (MVP) for each year from various annual award listings. The objectives include constructing a scraper to navigate through multiple web pages, extract MVP names, award years, and relevant statistics, and consolidate this data into a structured format for comprehensive analysis. Tools used include Python libraries such as BeautifulSoup and Scrapy for web scraping, and Pandas for data organization. The impact of this project lies in providing a thorough historical record of MVP selections, enabling deeper insights into player achievements over time and supporting fans, analysts, and researchers in understanding trends and patterns in MVP awards.</p>
-                            <a href="https://github.com/Vibeswithjay/MULTIPAGE-WEBSCRAPPER/tree/main" class="btn btn-secondary">Source Code</a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+
+          <div class="card" data-reveal>
+            <h3>What I’m looking for</h3>
+            <ul class="list">
+              <li>Data roles (UK)</li>
+              <li>Projects where impact matters more than hype</li>
+              <li>Teams that value clarity and strong evaluation</li>
+            </ul>
+          </div>
+
+          <div class="card" data-reveal>
+            <h3>Quick links</h3>
+            <div class="quick-links">
+              <a class="q" href="Chukwueloke_Iwegbue_CV.pdf" download>Download CV</a>
+              <a class="q" href="https://www.linkedin.com/in/chukwueloke-iwegbue-437346284/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="q" href="https://github.com/Vibeswithjay" target="_blank" rel="noopener">GitHub</a>
             </div>
+          </div>
         </div>
-    </section>
-     <!-- Skills Section -->
-     <section id="skills" class="skills-section py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Skills</h2>
-            <div class="row">
-                <!-- Skill Card 1 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card text-center">
-                        <img src="PLOGO.jpeg" class="card-img-top mx-auto" alt="Python" style="width: 80px; height: 80px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Python</h5>
-                            <p class="card-text">With intermediate Python skills, I excel in data manipulation using libraries like Pandas and NumPy, enabling efficient cleaning, analysis, and transformation of complex datasets. My experience extends to web scraping with BeautifulSoup and Scrapy, allowing me to gather and process data from multiple web pages seamlessly. I am adept at creating clear and impactful visualizations using Matplotlib, Seaborn, and Plotly, and I regularly automate tasks with Python scripts to enhance efficiency. Additionally, I have a solid understanding of algorithms and data structures, and I can integrate and interact with APIs to pull in external data. These skills collectively enable me to tackle diverse programming challenges and deliver data-driven insights effectively.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Skill Card 2 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card text-center">
-                        <img src="DLOGO.jpg" class="card-img-top mx-auto" alt="Data Visualization" style="width: 80px; height: 80px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Data Visualization</h5>
-                            <p class="card-text">I specialize in data visualization, leveraging tools like Matplotlib, Seaborn, and Plotly to transform complex datasets into insightful and visually compelling charts and graphs. My expertise includes creating a wide range of visualizations, from basic line and bar charts to advanced interactive dashboards, which help to uncover trends, patterns, and anomalies in data. By applying best practices in design and visualization principles, I ensure that my visual representations not only convey information clearly but also engage and inform stakeholders, facilitating data-driven decision-making.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Skill Card 3 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card text-center">
-                        <img src="sql-database-generic.jpg" class="card-img-top mx-auto" alt="SQL" style="width: 80px; height: 80px;">
-                        <div class="card-body">
-                            <h5 class="card-title">SQL</h5>
-                            <p class="card-text">I possess strong SQL skills, allowing me to efficiently query, manipulate, and analyze relational databases. I am adept at writing complex SQL queries to extract and aggregate data, perform joins, and filter results based on specific criteria. My experience includes creating and managing database schemas, optimizing query performance, and using SQL for data validation and reporting. By leveraging my SQL expertise, I can translate business requirements into actionable insights, ensuring data integrity and supporting data-driven decision-making across various projects.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Skill Card 4 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card text-center">
-                        <img src="datastorytelling.jpeg" class="card-img-top mx-auto" alt="Data Storytelling" style="width: 80px; height: 80px;">
-                        <div class="card-body">
-                            <h5 class="card-title">Data Storytelling</h5>
-                            <p class="card-text">I excel in data storytelling, seamlessly combining data analysis with compelling narratives to transform complex information into engaging and actionable insights. By using visualization tools and techniques, I create clear, informative charts and graphs that not only highlight key findings but also convey a coherent story that resonates with the audience. My approach involves structuring data presentations to emphasize trends, patterns, and anomalies, ensuring that insights are both accessible and impactful. Through effective storytelling, I help stakeholders make informed decisions and understand the broader implications of the data.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-       <!-- Contact Me Section -->
-       <section id="contact" class="contact-section py-5">
-        <div class="container">
-            <h2 class="text-center text-white mb-4">Contact Me</h2>
-            <div class="row mb-4">
-                <!-- Contact Information -->
-                <div class="col-md-6 text-center mb-3 mb-md-0">
-                    <i class="fa fa-envelope fa-2x text-white"></i>
-                    <p><a href="mailto:iwegbueloke@gmail.com">iwegbueloke@gmail.com</a></p>
-                </div>
-                <div class="col-md-6 text-center">
-                    <i class="fa fa-phone fa-2x text-white"></i>
-                    <p><a href="tel:+2348056154435">+2348056154435</a></p>
-                </div>
-            </div>
-            <div class="social-links">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Vibeswithjay"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.twitter.com/Vibeswithjay_"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.instagram.com/vibess.sg?igsh=MXU3aDVmZzcxOW5oMA=="><i class="fa-brands fa-instagram  "></i></a>
-            </div>
-        </div>
+      </div>
     </section>
 
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <h2>Projects</h2>
+          <p>8 projects — swipe or use arrows to browse.</p>
+        </div>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+        <div class="carousel" data-reveal aria-label="Project carousel">
+          <div class="carousel-top">
+            <div class="carousel-controls">
+              <button class="carousel-btn" id="projPrev" aria-label="Previous projects" type="button">‹</button>
+              <button class="carousel-btn" id="projNext" aria-label="Next projects" type="button">›</button>
+            </div>
+            <div class="carousel-dots" id="projDots" aria-label="Project pages"></div>
+          </div>
+
+          <div class="carousel-viewport" id="projViewport">
+            <div class="carousel-track" id="projTrack">
+
+              <!-- Page 1 -->
+              <div class="carousel-page">
+                <article class="project card" data-reveal>
+                  <div class="thumb">
+                    <img src="newplot (1).png" alt="Analysis of Universities Quota" />
+                  </div>
+                  <div class="project-body">
+                    <h3>Analysis of Universities Quota</h3>
+                    <p>Exploratory analysis and visual insights around university quota allocation and patterns.</p>
+                    <div class="tags">
+                      <span>Python</span><span>Pandas</span><span>EDA</span><span>Visualization</span>
+                    </div>
+                    <div class="actions">
+                      <a class="link" href="https://github.com/Vibeswithjay/Analysis-of-Universities-Quota" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project card" data-reveal>
+                  <div class="thumb">
+                    <img src="WEBSC.png" alt="Multipage Webscrapper" />
+                  </div>
+                  <div class="project-body">
+                    <h3>Multipage Webscrapper</h3>
+                    <p>Multi-page scraping pipeline that collects, cleans, and exports structured datasets.</p>
+                    <div class="tags">
+                      <span>Python</span><span>Web Scraping</span><span>ETL</span><span>CSV</span>
+                    </div>
+                    <div class="actions">
+                      <a class="link" href="https://github.com/Vibeswithjay/MULTIPAGE-WEBSCRAPPER" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Page 2 -->
+              <div class="carousel-page">
+                <article class="project card" data-reveal>
+                  <div class="thumb">
+                    <img src="cnnpro.png" alt="Vehicle damage insurance claim verification with CNN" />
+                  </div>
+                  <div class="project-body">
+                    <h3>Vehicle Damage Claim Verification (CNN)</h3>
+                    <p>Computer vision model for classifying vehicle damage to support insurance claim verification.</p>
+                    <div class="tags">
+                      <span>Deep Learning</span><span>CNN</span><span>Computer Vision</span><span>TensorFlow</span>
+                    </div>
+                    <div class="actions">
+                      <a class="link" href="https://github.com/Vibeswithjay/VEHICLE-DAMAGE-INSURANCE-CLAIM-VERIFICATION-USING-CONVOLUTIONAL-NEURAL-NETWORKS" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project card" data-reveal>
+                  <div class="thumb">
+                    <img src="censuspro.png" alt="Census data analysis" />
+                  </div>
+                  <div class="project-body">
+                    <h3>Census Data Analysis</h3>
+                    <p>Demographic and occupational analysis to support local planning and investment decisions.</p>
+                    <div class="tags">
+                      <span>Python</span><span>EDA</span><span>Insights</span><span>Reporting</span>
+                    </div>
+                    <div class="actions">
+                      <a class="link" href="https://github.com/Vibeswithjay/Census-Data-Analysis" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Page 3 -->
+              <div class="carousel-page">
+                <article class="project card" data-reveal>
+                  <div class="thumb">
+                    <img src="sspro.png" alt="Streaming service analysis" />
+                  </div>
+                  <div class="project-body">
+                    <h3>Streaming Service Analysis</h3>
+                    <p>Supervised + unsupervised learning for customer insights, segmentation, and prediction.</p>
+                    <div class="tags">
+                      <span>scikit-learn</span><span>Clustering</span><span>Classification</span><span>ANN</span>
+                    </div>
+                    <div class="actions">
+                      <a class="link" href="https://github.com/Vibeswithjay/ANALYSIS-OF-STREAMING-SERVICE-DATASET-SUPERVISED-AND-UNSUPERVISED-LEARNING-TECHNIQUES-" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project card" data-reveal>
+                  <div class="thumb">
+                    <img src="multitextpro.png" alt="Multi text classification" />
+                  </div>
+                  <div class="project-body">
+                    <h3>Multi‑Text Classification</h3>
+                    <p>NLP pipeline for multi-class text classification with feature extraction and evaluation.</p>
+                    <div class="tags">
+                      <span>NLP</span><span>TF‑IDF</span><span>scikit-learn</span><span>Metrics</span>
+                    </div>
+                    <div class="actions">
+                      <a class="link" href="https://github.com/Vibeswithjay/MULTI-TEXT-CLASSIFICATION" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Page 4 -->
+              <div class="carousel-page">
+                <article class="project card" data-reveal>
+                  <div class="thumb">
+                    <img src="rspro.png" alt="Road safety data analysis" />
+                  </div>
+                  <div class="project-body">
+                    <h3>Road Safety Data Analysis</h3>
+                    <p>Accident analytics to identify patterns, risk factors, and actionable safety insights.</p>
+                    <div class="tags">
+                      <span>SQL</span><span>Python</span><span>Analytics</span><span>Visualization</span>
+                    </div>
+                    <div class="actions">
+                      <a class="link" href="https://github.com/Vibeswithjay/Road-Safety-Data-Analysis" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                  </div>
+                </article>
+
+               <article class="project card" data-reveal>
+                  <div class="thumb">
+                    <img src="pipro.png" alt="Patient Risk Identification" />
+                  </div>
+                  <div class="project-body">
+                    <h3>Patient Risk Identification</h3>
+                    <p>Patient risk identification pipeline for 30-day readmission prediction, optimised for high recall.</p>
+                    <div class="tags">
+                      <span>Python</span><span>NumPy</span><span>scikit-learn</span><span>Model tuning</span><span>Threshold Optimisation</span><span>Data Visualization</span>
+                    </div>
+                    <div class="actions">
+                      <a class="link" href="https://github.com/Vibeswithjay/Patient-Risk-Identification" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
-    
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <h2>Skills</h2>
+          <p>Tools I use regularly.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill card" data-reveal>
+            <div class="skill-top">
+              <img src="PLOGO.jpeg" alt="Python logo" />
+              <h3>Python</h3>
+            </div>
+            <p>Pandas, NumPy, scikit-learn, matplotlib — pipelines, modelling, evaluation, and automation.</p>
+          </div>
+
+          <div class="skill card" data-reveal>
+            <div class="skill-top">
+              <img src="sql-database-generic.jpg" alt="Data visualization icon" />
+              <h3>SQL</h3>
+            </div>
+            <p>Joins, aggregations, window functions, and data modelling for structured reporting and insights.</p>
+          </div>
+
+          <div class="skill card" data-reveal>
+            <div class="skill-top">
+              <img src="DLOGO.jpg" alt="Data visualization icon" />
+              <h3>Data Visualization</h3>
+            </div>
+            <p>Clear plots and dashboards for trends, distributions, comparisons, and stakeholder-ready storytelling.</p>
+          </div>
+
+          <div class="skill card" data-reveal>
+            <div class="skill-top">
+              <img src="ml.png" alt="Data visualization icon" />
+              <h3>Machine Learning</h3>
+            </div>
+            <p>Classification, regression, clustering, model selection, and metric-driven evaluation.</p>
+          </div>
+
+          <div class="skill card" data-reveal>
+            <div class="skill-top">
+             <img src="dl.png" alt="Data visualization icon" />
+              <h3>Deep Learning</h3>
+            </div>
+            <p>CNNs for computer vision using TensorFlow/Keras — training, tuning, and performance assessment.</p>
+          </div>
+
+          <div class="skill card" data-reveal>
+            <div class="skill-top">
+              <img src="nlp.png" alt="Data visualization icon" />
+              <h3>NLP</h3>
+            </div>
+            <p>Text preprocessing, TF‑IDF, multi-class classification, and evaluation for real-world text data.</p>
+          </div>
+
+          <div class="skill card" data-reveal>
+            <div class="skill-top">
+              <img src="ws.jpg" alt="Data visualization icon" />
+              <h3>Web Scraping</h3>
+            </div>
+            <p>Automated data collection and parsing for multi-page sources, with clean exports and reproducibility.</p>
+          </div>
+
+          <div class="skill card" data-reveal>
+            <div class="skill-top">
+              <img src="de.png" alt="Data visualization icon" />
+              <h3>Data Engineering</h3>
+            </div>
+            <p>ETL-style workflows: cleaning, transforming, validating, and structuring data for analysis.</p>
+          </div>
+
+          <div class="skill card" data-reveal>
+            <div class="skill-top">
+              <img src="git.webp" alt="Data visualization icon" />
+              <h3>Git & GitHub</h3>
+            </div>
+            <p>Version control, clean commits, project documentation, and sharing work publicly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <h2>Contact</h2>
+          <p>Want to work together or see more projects? Message me.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card" data-reveal>
+            <h3>Best ways to reach me</h3>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="https://www.linkedin.com/in/chukwueloke-iwegbue-437346284/" target="_blank" rel="noopener">Message on LinkedIn</a>
+              <a class="btn btn-ghost" href="Chukwueloke_Iwegbue_CV.pdf" download>Download CV</a>
+              <a class="btn btn-soft" href="https://github.com/Vibeswithjay" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-soft"
+                 href="https://mail.google.com/mail/?view=cm&fs=1&to=iwegbueloke@gmail.com&su=Portfolio%20Enquiry"
+                 target="_blank" rel="noopener">
+                Email
+              </a>
+            </div>
+          </div>
+
+          <div class="card" data-reveal>
+            <h3>Quick summary</h3>
+            <ul class="list">
+              <li>Data science and analytics projects with clear evaluation</li>
+              <li>SQL + Python workflows end-to-end</li>
+              <li>Strong communication and reporting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Chukwueloke Iwegbue. Built with HTML, CSS, and JS.</p>
+        <a class="backtop" href="#top" aria-label="Back to top">↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
